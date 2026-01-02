@@ -50,7 +50,7 @@ The document is written to be largely self-contained, though familiarity with un
 Where appropriate, analytical examples are included directly in the notes. Selected models are also implemented numerically in accompanying notebooks (if present), illustrating:
 
 * Monte Carlo pricing
-* Implied volatility and surface calibration
+* Calibration
 * Stochastic volatility simulation
 * Numerical stability and discretization effects
 
