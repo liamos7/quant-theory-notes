@@ -1,11 +1,16 @@
 # quant-theory-notes
-# Quantitative Finance — Mathematical Foundations and Models
 
 ## Overview
 
-This repository contains a set of self-written notes on the mathematical foundations of modern quantitative finance. The material is intended to bridge rigorous probability theory and stochastic calculus with practical asset pricing, calibration, and model risk considerations.
+This repository contains a set of self-written notes with coded models on the mathematical foundations of modern quantitative finance. The material is intended to bridge rigorous probability theory and stochastic calculus with practical asset pricing, calibration, and model risk considerations.
 
 The notes are **not a textbook** and are **not tied to a specific course**. Instead, they are designed as a structured reference that reflects how quantitative finance is theorized: models are derived from first principles, calibrated to market data, implemented numerically, and evaluated critically with respect to their limitations.
+
+---
+
+## Motivation
+
+These notes were written to consolidate understanding of quantitative finance theory at a level suitable for quantitative research or graduate-level study of financial mathematics. Specifically, I wanted to make sure I had a solid understanding of theory, and believe that the best way to do that is to consolidate some central reference, with coded examples. Hopefully, these can also be of use to others.
 
 ---
 
@@ -16,7 +21,6 @@ The notes cover the following core areas:
 * Probability theory and measure-theoretic foundations
 * Conditional expectation, filtrations, and martingales
 * Brownian motion and stochastic calculus
-* Stochastic differential equations and PDE connections
 * Arbitrage pricing and change of measure
 * Equity derivatives and exotic options
 * Local and stochastic volatility models
@@ -51,12 +55,6 @@ Where appropriate, analytical examples are included directly in the notes. Selec
 * Numerical stability and discretization effects
 
 These implementations are intended to demonstrate methodology rather than production-level systems.
-
----
-
-## Motivation
-
-These notes were written to consolidate understanding of quantitative finance theory at a level suitable for quantitative research or graduate-level study of financial mathematics.
 
 ---
 
