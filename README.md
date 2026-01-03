@@ -12,7 +12,7 @@ practical implementations in Python.
 
 ## Theoretical Foundation
 
-I've compiled [comprehensive notes](notes/quantitative_finance_notes.pdf) 
+I've compiled [comprehensive notes](notes/Quantitative_Finance_Notes.pdf) 
 covering the mathematical foundations of quantitative finance:
 
 - Stochastic calculus and martingale theory
