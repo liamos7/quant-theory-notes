@@ -1,68 +1,104 @@
-# quant-theory
+# Quantitative Finance: Theory and Applications
 
-## Overview
+A collection of quantitative finance projects exploring derivatives pricing, 
+risk management, and trading strategies. Combines mathematical theory with 
+practical implementations in Python.
 
-This repository contains a set of self-written notes with coded implementations of the mathematical foundations of modern quantitative finance. The material is intended to bridge rigorous probability theory and stochastic calculus with practical asset pricing, calibration, and model risk considerations.
-
-The notes are **not a textbook** and are **not tied to a specific course**. Instead, they are designed as a structured reference that reflects how quantitative finance is theorized: models are derived from first principles, calibrated to market data, implemented numerically, and evaluated critically with respect to their limitations.
-
----
-
-## Motivation
-
-These notes were written to consolidate understanding of quantitative finance theory at a level suitable for quantitative research or graduate-level study of financial mathematics. Specifically, I wanted to make sure I had a solid understanding of theory, and believe that the best way to do that is to consolidate some central reference, with coded examples. Hopefully, these can also be of use to others.
+**Author:** Liam O'Shaughnessy  
+**Background:** Princeton Physics (Senior) | HEP Research at CERN  
+**Contact:** [email](liamos1618@gmail.com) | [LinkedIn](https://www.linkedin.com/in/liam-o-shaughnessy-155b66238/)
 
 ---
 
-## Scope and Topics
+## Theoretical Foundation
 
-The notes cover the following core areas:
+I've compiled [comprehensive notes](notes/quantitative_finance_notes.pdf) 
+covering the mathematical foundations of quantitative finance:
 
-* Probability theory and measure-theoretic foundations
-* Conditional expectation, filtrations, and martingales
-* Brownian motion and stochastic calculus
-* Arbitrage pricing and change of measure
-* Equity derivatives and exotic options
-* Local and stochastic volatility models
-* Term structure and interest rate modeling
-* Credit risk and counterparty risk (XVA)
-* Portfolio theory and optimal execution
-* Time series models and volatility estimation
-* Numerical methods and Monte Carlo simulation
-* Model risk, calibration instability, and practical pitfalls
+- Stochastic calculus and martingale theory
+- Derivatives pricing (Black-Scholes, exotic options)
+- Interest rate and credit models
+- Portfolio optimization and risk management
+- Numerical methods (Monte Carlo, finite difference)
+- Machine learning applications
 
-Each major topic includes explicit examples designed to connect abstract theory to concrete pricing and modeling tasks.
+These notes synthesize material from Shreve, Bjork, and academic papers.
 
 ---
 
-## Examples and Implementation
+## Projects
 
-Where appropriate, analytical examples are included directly in the notes. Selected models are also implemented numerically in accompanying notebooks, illustrating:
+### 1. [Volatility Surface Modeling](projects/01_volatility_surface/)
+**Objective:** Model implied volatility dynamics using local and stochastic 
+volatility frameworks.
 
-* Pricing of exotic options
-* Local and stochastic volatility calibration
+**Key Techniques:**
+- Implied volatility surface extraction from SPY options
+- SVI/SSVI parametrization with arbitrage detection
+- Dupire local volatility implementation
+- Heston stochastic volatility calibration (Carr-Madan FFT and Lewis methods)
+- Volatility risk premium estimation
 
-These implementations are intended to demonstrate methodology rather than production-level systems.
+**Results:** Identified and corrected arbitrage violations in raw SVI, 
+calibrated Heston, estimated vol risk premium.
+
+**Tech Stack:** Python, NumPy, SciPy, Plotly, yfinance
+
+[View Project →](projects/01_volatility_surface/)
+
+---
+
+### 2. [Variance Swap Pricing](projects/02_variance_swaps/) *(Coming Soon)*
+Replication-based pricing using log contracts and comparison to stochastic 
+volatility models.
+
+### 3. [Options Greeks and Dynamic Hedging](projects/03_greeks_hedging/) *(Coming Soon)*
+Simulation of delta-gamma hedging with transaction costs and comparison to 
+theoretical costs.
+
+### 4. [Strategy Backtesting Framework](projects/04_strategy_backtest/) *(Coming Soon)*
+Historical analysis of covered calls, iron condors, and volatility arbitrage 
+strategies.
+
+---
+
+## Tech Stack
+
+- **Languages:** Python, C++ (for performance-critical components)
+- **Libraries:** NumPy, SciPy, Pandas, Matplotlib/Plotly
+- **Data:** Yahoo Finance, CBOE, Quandl
+- **Tools:** Jupyter, Git, VS Code
+
+---
+
+## Background
+
+I'm a Princeton physics senior with research experience in high-energy 
+experimental physics at CERN, focusing on machine learning applications for 
+particle detection and classification. I became interested in quantitative 
+finance while exploring applications of stochastic processes and statistical 
+methods to financial markets.
+
+These projects represent my self-directed learning in mathematical finance, 
+combining rigorous theory with practical implementation.
+
+---
+
+## Contact
+
+Interested in collaborating or have feedback? Reach out:
+- **Email:** lo8603@princeton.edu
+- **LinkedIn:** [Liam O'Shaughnessy](https://www.linkedin.com/in/liam-o-shaughnessy-155b66238/)
+- **GitHub:** [@liamos7](https://github.com/liamos7)
 
 ---
 
 ## References
 
-The presentation is influenced by standard texts, including:
-
-* S. Shreve, *Stochastic Calculus for Finance II*
-* T. Björk, *Arbitrage Theory in Continuous Time*
-* P. Glasserman, *Monte Carlo Methods in Financial Engineering*
-
----
-
-## Disclaimer
-
-These notes are for educational purposes only. They are not intended as investment advice or as a description of any proprietary trading or risk management system.
-
----
-
-## Author
-
-Liam O'Shaughnessy
-
+Key resources used in developing these projects:
+- Shreve, S. (2004). *Stochastic Calculus for Finance II*
+- Bjork, T. (2009). *Arbitrage Theory in Continuous Time*
+- Koralov and Sinai (1992). *Theory of Probability and Random Processes*
+- Schilling and Partzsch (2010). *Brownian Motion*
+- Gatheral, J. (2006). *The Volatility Surface*
+- Taleb, N. (1997). *Dynamic Hedging*
