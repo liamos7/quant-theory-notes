@@ -1,8 +1,8 @@
-# quant-theory-notes
+# quant-theory
 
 ## Overview
 
-This repository contains a set of self-written notes with coded models on the mathematical foundations of modern quantitative finance. The material is intended to bridge rigorous probability theory and stochastic calculus with practical asset pricing, calibration, and model risk considerations.
+This repository contains a set of self-written notes with coded implementations of the mathematical foundations of modern quantitative finance. The material is intended to bridge rigorous probability theory and stochastic calculus with practical asset pricing, calibration, and model risk considerations.
 
 The notes are **not a textbook** and are **not tied to a specific course**. Instead, they are designed as a structured reference that reflects how quantitative finance is theorized: models are derived from first principles, calibrated to market data, implemented numerically, and evaluated critically with respect to their limitations.
 
@@ -35,24 +35,12 @@ Each major topic includes explicit examples designed to connect abstract theory 
 
 ---
 
-## How to Read These Notes
-
-* Readers interested in **theoretical foundations** may focus on Chapters 1–3.
-* Readers interested in **derivative pricing and modeling** may focus on Chapters 3–6.
-* Readers interested in **practical limitations** should read the final chapter on model risk and calibration.
-
-The document is written to be largely self-contained, though familiarity with undergraduate probability and calculus is assumed.
-
----
-
 ## Examples and Implementation
 
-Where appropriate, analytical examples are included directly in the notes. Selected models are also implemented numerically in accompanying notebooks (if present), illustrating:
+Where appropriate, analytical examples are included directly in the notes. Selected models are also implemented numerically in accompanying notebooks, illustrating:
 
-* Monte Carlo pricing
-* Calibration
-* Stochastic volatility simulation
-* Numerical stability and discretization effects
+* Pricing of exotic options
+* Local and stochastic volatility calibration
 
 These implementations are intended to demonstrate methodology rather than production-level systems.
 
